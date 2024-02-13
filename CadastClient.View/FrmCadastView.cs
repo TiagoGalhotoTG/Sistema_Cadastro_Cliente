@@ -14,7 +14,7 @@ namespace CadastClient.View
 {
     public partial class FrmCadastView : Form
     {
-        CadastEntid ObjTabela = new CadastEntid()
+        CadastEntid ObjTabela = new CadastEntid();
         public FrmCadastView()
         {
             InitializeComponent();
