@@ -14,6 +14,7 @@ namespace CadastClient.View
 {
     public partial class FrmCadastView : Form
     {
+        CadastEntid ObjTabela = new CadastEntid();
         public FrmCadastView()
         {
             InitializeComponent();
@@ -53,6 +54,16 @@ namespace CadastClient.View
                     break;
 
                 case "Salvar":
+                    try
+                    {
+                        ObjTabela.Nomecomplet = txtNomeComplet.Text;
+                    }
+                    catch (Exception Ex)
+                    {
+                        MessageBox.Show("Ocorreu um erro ao salvar");
+                        throw;
+                        int X = CadastModel.Inserir(ObjTabela);
+                    }
                     break;
 
             }

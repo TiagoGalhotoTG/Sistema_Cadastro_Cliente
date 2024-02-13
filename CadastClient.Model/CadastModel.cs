@@ -8,7 +8,8 @@ using CadastClient.Entid;
 
 namespace CadastClient.Model
 {
-    public class Class1
+    public class CadastModel
     {
+      
     }
 }
