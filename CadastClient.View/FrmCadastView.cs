@@ -57,12 +57,13 @@ namespace CadastClient.View
                     try
                     {
                         ObjTabela.Nomecomplet = txtNomeComplet.Text;
+                        int X = CadastModel.Inserir(ObjTabela);
                     }
                     catch (Exception Ex)
                     {
                         MessageBox.Show("Ocorreu um erro ao salvar");
                         throw;
-                        int X = CadastModel.Inserir(ObjTabela);
+
                     }
                     break;
 

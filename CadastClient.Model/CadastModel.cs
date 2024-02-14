@@ -10,6 +10,9 @@ namespace CadastClient.Model
 {
     public class CadastModel
     {
-      
+        public static int Inserir(CadastEntid objTabela)
+        {
+            return new CadastDAO().Inserir(objTabela);
+        }
     }
 }
