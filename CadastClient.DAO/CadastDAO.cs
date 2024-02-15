@@ -15,7 +15,7 @@ namespace CadastClient.DAO
         {
             using (SqlConnection con = new SqlConnection())
             {
-
+                con.ConnectionString = Properties.Settings.Default.cadast;
             }
         }
     }

@@ -26,6 +26,8 @@ namespace CadastClient.DAO.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=TIAGOGALHOTO\\SQLEXPRESS;Initial Catalog=sistcadastclient;Integrated S" +
+            "ecurity=True;Encrypt=False")]
         public string cadast {
             get {
                 return ((string)(this["cadast"]));
