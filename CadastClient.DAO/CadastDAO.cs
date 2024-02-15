@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Data;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -16,6 +17,9 @@ namespace CadastClient.DAO
             using (SqlConnection con = new SqlConnection())
             {
                 con.ConnectionString = Properties.Settings.Default.cadast;
+                SqlCommand cn = new SqlCommand();
+                cn.CommandType = CommandType.Text;
+                cn.CommandText = "INSERT INTO sistcadastclient ([nomecomplet]) VALUES (@nomecomplet)";
             }
         }
     }
