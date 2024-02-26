@@ -17,5 +17,6 @@ namespace CadastClient.Entid
 
         public int Idpessoafisica { get => idpessoafisica; set => idpessoafisica = value; }
         public string Nomecomplet { get => nomecomplet; set => nomecomplet = value; }
+
     }
 }

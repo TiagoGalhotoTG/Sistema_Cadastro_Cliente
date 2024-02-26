@@ -69,5 +69,10 @@ namespace CadastClient.View
 
             }
         }
+
+        private void FrmCadastView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
