@@ -20,7 +20,7 @@ namespace CadastClient.DAO
                 SqlCommand cn = new SqlCommand();
                 cn.CommandType = CommandType.Text;
                 cn.CommandText = "INSERT INTO sistcadastclient ([nomecomplet]) VALUES (@nomecomplet)";
-               
+               return
             }
         }
     }
