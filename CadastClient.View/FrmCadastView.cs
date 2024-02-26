@@ -58,6 +58,14 @@ namespace CadastClient.View
                     {
                         ObjTabela.Nomecomplet = txtNomeComplet.Text;
                         int X = CadastModel.Inserir(ObjTabela);
+                        if (X > 0)
+                        {
+                            MessageBox.Show("Salvo Com Sucesso...!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Erro Ao Salvo...!");
+                        }
                     }
                     catch (Exception Ex)
                     {
@@ -66,13 +74,12 @@ namespace CadastClient.View
 
                     }
                     break;
-
+                
             }
         }
 
-        private void FrmCadastView_Load(object sender, EventArgs e)
-        {
 
-        }
+    
     }
+
 }
