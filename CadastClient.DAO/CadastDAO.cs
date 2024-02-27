@@ -24,7 +24,6 @@ namespace CadastClient.DAO
                 cn.Parameters.Add("nomecomplet", SqlDbType.VarChar).Value = objTabela.Nomecomplet;
                 cn.Connection = con;
                 int sn = cn.ExecuteNonQuery();
-                Console.Write(sn);
                 return sn;
                 
             }
