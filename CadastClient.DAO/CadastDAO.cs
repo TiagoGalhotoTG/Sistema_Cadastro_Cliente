@@ -19,10 +19,12 @@ namespace CadastClient.DAO
                 con.ConnectionString = Properties.Settings.Default.cadast;
                 SqlCommand cn = new SqlCommand();
                 cn.CommandType = CommandType.Text;
-                cn.CommandText = "INSERT INTO sistcadastclient ([nomecomplet]) VALUES (@nomecomplet)";
+                con.Open();
+                cn.CommandText = "INSERT INTO pessoafisica ([nomecomplet]) VALUES (@nomecomplet)";
                 cn.Parameters.Add("nomecomplet", SqlDbType.VarChar).Value = objTabela.Nomecomplet;
+                cn.Connection = con;
                 int sn = cn.ExecuteNonQuery();
-                MessageBox.Show(sn);
+                Console.Write(sn);
                 return sn;
                 
             }

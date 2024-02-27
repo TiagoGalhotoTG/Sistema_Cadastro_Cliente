@@ -69,9 +69,7 @@ namespace CadastClient.View
                     }
                     catch (Exception Ex)
                     {
-                        MessageBox.Show("Ocorreu um Erro ao salvar !");
-                        throw;
-
+                        MessageBox.Show("Ocorreu um Erro ao salvar !"+ Ex.Message);
                     }
                     break;
                 
