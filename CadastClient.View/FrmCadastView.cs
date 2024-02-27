@@ -60,16 +60,16 @@ namespace CadastClient.View
                         int X = CadastModel.Inserir(ObjTabela);
                         if (X > 0)
                         {
-                            MessageBox.Show("Salvo Com Sucesso...!");
+                            MessageBox.Show("{0} Salvo Com Sucesso !", txtNomeComplet.Text);
                         }
                         else
                         {
-                            MessageBox.Show("Erro Ao Salvo...!");
+                            MessageBox.Show("Erro Ao Salvo !");
                         }
                     }
                     catch (Exception Ex)
                     {
-                        MessageBox.Show("Ocorreu um erro ao salvar");
+                        MessageBox.Show("Ocorreu um Erro ao salvar !");
                         throw;
 
                     }

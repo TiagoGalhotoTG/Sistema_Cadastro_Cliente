@@ -22,6 +22,8 @@ namespace CadastClient.DAO
                 cn.CommandText = "INSERT INTO sistcadastclient ([nomecomplet]) VALUES (@nomecomplet)";
                 cn.Parameters.Add("nomecomplet", SqlDbType.VarChar).Value = objTabela.Nomecomplet;
                 int sn = cn.ExecuteNonQuery();
+                MessageBox.Show(sn);
+                return sn;
                 
             }
         }
