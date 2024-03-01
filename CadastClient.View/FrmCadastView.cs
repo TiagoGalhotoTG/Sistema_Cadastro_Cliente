@@ -18,6 +18,10 @@ namespace CadastClient.View
         public FrmCadastView()
         {
             InitializeComponent();
+
+
+            txtDataInclustcadast.Text = DateTime.Now.ToShortDateString();
+            
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
@@ -55,7 +59,9 @@ namespace CadastClient.View
 
                 case "Salvar":
                     try
+
                     {
+                        ObjTabela.Dataincluscadast = txtDataInclustcadast.Text;
                         ObjTabela.Nomecomplet = txtNomeComplet.Text;
                         int X = CadastModel.Inserir(ObjTabela);
                         if (X > 0)

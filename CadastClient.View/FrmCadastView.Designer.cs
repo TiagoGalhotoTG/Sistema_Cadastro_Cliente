@@ -32,6 +32,7 @@
             this.txtNomeComplet = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
+            this.txtDataInclustcadast = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -75,11 +76,19 @@
             this.btnNovo.UseVisualStyleBackColor = true;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
+            // txtDataInclustcadast
+            // 
+            this.txtDataInclustcadast.Location = new System.Drawing.Point(60, 159);
+            this.txtDataInclustcadast.Name = "txtDataInclustcadast";
+            this.txtDataInclustcadast.Size = new System.Drawing.Size(100, 20);
+            this.txtDataInclustcadast.TabIndex = 4;
+            // 
             // FrmCadastView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(319, 191);
+            this.Controls.Add(this.txtDataInclustcadast);
             this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txtNomeComplet);
@@ -97,6 +106,7 @@
         private System.Windows.Forms.TextBox txtNomeComplet;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnNovo;
+        private System.Windows.Forms.TextBox txtDataInclustcadast;
     }
 }
 

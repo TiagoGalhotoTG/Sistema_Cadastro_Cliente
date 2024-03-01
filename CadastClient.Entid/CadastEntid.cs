@@ -11,12 +11,14 @@ namespace CadastClient.Entid
         //Campos para método.
 
         private int idpessoafisica;
+        private DateTime dataincluscadast;
         private string nomecomplet;
+       
 
         //Método de envio e recebimento.
 
         public int Idpessoafisica { get => idpessoafisica; set => idpessoafisica = value; }
         public string Nomecomplet { get => nomecomplet; set => nomecomplet = value; }
-
+        public DateTime Dataincluscadast { get => dataincluscadast; set => dataincluscadast = value; }
     }
 }
