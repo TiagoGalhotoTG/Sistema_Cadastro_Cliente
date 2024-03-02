@@ -20,8 +20,8 @@ namespace CadastClient.View
             InitializeComponent();
 
 
-            txtDataInclustcadast.Text = DateTime.Now.ToShortDateString();
-            
+           txtDataInclustcadast.Text = DateTime.Now.ToShortDateString();
+
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
@@ -61,7 +61,7 @@ namespace CadastClient.View
                     try
 
                     {
-                        ObjTabela.Dataincluscadast = txtDataInclustcadast.Text;
+                        ObjTabela.Dataincluscadast = txtDataInclustcadast.Text; 
                         ObjTabela.Nomecomplet = txtNomeComplet.Text;
                         int X = CadastModel.Inserir(ObjTabela);
                         if (X > 0)
@@ -82,8 +82,10 @@ namespace CadastClient.View
             }
         }
 
+        private void FrmCadastView_Load(object sender, EventArgs e)
+        {
 
-    
+        }
     }
 
 }
