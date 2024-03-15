@@ -108,7 +108,6 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmCadastView";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.FrmCadastView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
