@@ -41,11 +41,13 @@ namespace CadastClient.View
         private void HabilitarCampos()
         {
             txtNomeComplet.Enabled = true;
+            txtCpf.Enabled = true;
         }
 
         private void LimparCampos ()
         {
             txtNomeComplet.Text = "";
+            txtCpf.Text = "";
         }
 
         private void Iniciar()
@@ -62,7 +64,8 @@ namespace CadastClient.View
 
                     {
                         ObjTabela.Dataincluscadast = txtDataInclustcadast.Text; 
-                        ObjTabela.Nomecomplet = txtNomeComplet.Text;                        
+                        ObjTabela.Nomecomplet = txtNomeComplet.Text;
+                        ObjTabela.Cpf = txtCpf.Text;
                         int X = CadastModel.Inserir(ObjTabela);
                         if (X > 0)
                         {
@@ -80,6 +83,11 @@ namespace CadastClient.View
                     break;
                 
             }
+        }
+
+        private void FrmCadastView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

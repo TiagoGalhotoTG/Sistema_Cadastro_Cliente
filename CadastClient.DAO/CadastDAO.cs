@@ -20,9 +20,10 @@ namespace CadastClient.DAO
                 SqlCommand cn = new SqlCommand();
                 cn.CommandType = CommandType.Text;
                 con.Open();
-                cn.CommandText = "INSERT INTO pessoafisica ([nomecomplet],[dataincluscadast]) VALUES (@nomecomplet, @dataincluscadast)";
+                cn.CommandText = "INSERT INTO pessoafisica ([nomecomplet],[dataincluscadast],[cpf]) VALUES (@nomecomplet, @dataincluscadast,@cpf)";
                 cn.Parameters.Add("dataincluscadast", SqlDbType.Date).Value = objTabela.Dataincluscadast;
                 cn.Parameters.Add("nomecomplet", SqlDbType.VarChar).Value = objTabela.Nomecomplet;
+                cn.Parameters.Add("cpf", SqlDbType.VarChar).Value = objTabela.Cpf;
                 cn.Connection = con;
                 int sn = cn.ExecuteNonQuery();
                 return sn;

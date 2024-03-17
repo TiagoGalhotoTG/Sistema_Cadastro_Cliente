@@ -34,6 +34,8 @@
             this.btnNovo = new System.Windows.Forms.Button();
             this.txtDataInclustcadast = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtCpf = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +60,7 @@
             // btnSalvar
             // 
             this.btnSalvar.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(167, 120);
+            this.btnSalvar.Location = new System.Drawing.Point(181, 161);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 2;
@@ -69,7 +71,7 @@
             // btnNovo
             // 
             this.btnNovo.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovo.Location = new System.Drawing.Point(86, 120);
+            this.btnNovo.Location = new System.Drawing.Point(100, 161);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(75, 23);
             this.btnNovo.TabIndex = 3;
@@ -80,9 +82,9 @@
             // txtDataInclustcadast
             // 
             this.txtDataInclustcadast.Enabled = false;
-            this.txtDataInclustcadast.Location = new System.Drawing.Point(150, 86);
+            this.txtDataInclustcadast.Location = new System.Drawing.Point(157, 86);
             this.txtDataInclustcadast.Name = "txtDataInclustcadast";
-            this.txtDataInclustcadast.Size = new System.Drawing.Size(117, 20);
+            this.txtDataInclustcadast.Size = new System.Drawing.Size(110, 20);
             this.txtDataInclustcadast.TabIndex = 4;
             // 
             // label2
@@ -95,11 +97,31 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Data Cadastral :";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(53, 112);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(32, 15);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Cpf :";
+            // 
+            // txtCpf
+            // 
+            this.txtCpf.Enabled = false;
+            this.txtCpf.Location = new System.Drawing.Point(157, 112);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(110, 20);
+            this.txtCpf.TabIndex = 8;
+            // 
             // FrmCadastView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(319, 191);
+            this.ClientSize = new System.Drawing.Size(352, 223);
+            this.Controls.Add(this.txtCpf);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtDataInclustcadast);
             this.Controls.Add(this.btnNovo);
@@ -108,6 +130,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmCadastView";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FrmCadastView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,6 +144,8 @@
         private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.TextBox txtDataInclustcadast;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtCpf;
     }
 }
 
