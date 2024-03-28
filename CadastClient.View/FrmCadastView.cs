@@ -42,12 +42,16 @@ namespace CadastClient.View
         {
             txtNomeComplet.Enabled = true;
             txtCpf.Enabled = true;
+            txtRg.Enabled = true;
+            txtProfissao.Enabled = true;
         }
 
         private void LimparCampos ()
         {
             txtNomeComplet.Text = "";
             txtCpf.Text = "";
+            txtRg.Text = "";
+            txtProfissao.Text = "";
         }
 
         private void Iniciar()
@@ -66,6 +70,8 @@ namespace CadastClient.View
                         ObjTabela.Dataincluscadast = txtDataInclustcadast.Text; 
                         ObjTabela.Nomecomplet = txtNomeComplet.Text;
                         ObjTabela.Cpf = txtCpf.Text;
+                        ObjTabela.Rg = txtRg.Text;
+                        ObjTabela.Profissao = txtProfissao.Text;
                         int X = CadastModel.Inserir(ObjTabela);
                         if (X > 0)
                         {
