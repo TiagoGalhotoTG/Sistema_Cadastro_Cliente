@@ -16,6 +16,7 @@ namespace CadastClient.Entid
         private string cpf;
         private string rg;
         private string profissao;
+        private string observacoes;
        
 
         //Método de envio e recebimento.
@@ -26,5 +27,6 @@ namespace CadastClient.Entid
         public string Cpf { get => cpf; set => cpf = value; }
         public string Rg { get => rg; set => rg = value; }
         public string Profissao { get => profissao; set => profissao = value; }
+        public string Observacoes { get => observacoes; set => observacoes = value; }
     }
 }

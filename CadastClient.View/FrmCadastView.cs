@@ -44,6 +44,7 @@ namespace CadastClient.View
             txtCpf.Enabled = true;
             txtRg.Enabled = true;
             txtProfissao.Enabled = true;
+            txtRichTextBox.Enabled = true;
         }
 
         private void LimparCampos ()
@@ -52,6 +53,7 @@ namespace CadastClient.View
             txtCpf.Text = "";
             txtRg.Text = "";
             txtProfissao.Text = "";
+            txtRichTextBox.Text = "";
         }
 
         private void Iniciar()
@@ -72,6 +74,8 @@ namespace CadastClient.View
                         ObjTabela.Cpf = txtCpf.Text;
                         ObjTabela.Rg = txtRg.Text;
                         ObjTabela.Profissao = txtProfissao.Text;
+                        ObjTabela.Observacoes = txtRichTextBox.Text;
+                        
                         int X = CadastModel.Inserir(ObjTabela);
                         if (X > 0)
                         {
@@ -91,7 +95,7 @@ namespace CadastClient.View
             }
         }
 
-        private void FrmCadastView_Load(object sender, EventArgs e)
+        private void txtRichTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
