@@ -75,7 +75,7 @@ namespace CadastClient.View
                         ObjTabela.Rg = txtRg.Text;
                         ObjTabela.Profissao = txtProfissao.Text;
                         ObjTabela.Observacoes = txtRichTextBox.Text;
-                        
+                        ObjTabela.Datanasciment = txtDatanasciment.Text;
                         int X = CadastModel.Inserir(ObjTabela);
                         if (X > 0)
                         {

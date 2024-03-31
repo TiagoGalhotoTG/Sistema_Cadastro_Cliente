@@ -17,6 +17,7 @@ namespace CadastClient.Entid
         private string rg;
         private string profissao;
         private string observacoes;
+        private string datanasciment;
        
 
         //Método de envio e recebimento.
@@ -28,5 +29,6 @@ namespace CadastClient.Entid
         public string Rg { get => rg; set => rg = value; }
         public string Profissao { get => profissao; set => profissao = value; }
         public string Observacoes { get => observacoes; set => observacoes = value; }
+        public string Datanasciment { get => datanasciment; set => datanasciment = value; }
     }
 }
